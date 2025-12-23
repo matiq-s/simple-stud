@@ -16,69 +16,70 @@ import FacebookIcon from '@mui/icons-material/Facebook'
 
 export default function Info() {
   return (
-    <Container maxWidth="lg" sx={{ mt: { xs: 6, md: -10, xl: 2 } }}>
+    <Container maxWidth="lg" sx={{ mt: { xs: 6, md: 6, xl: 6 } }}>
       <Grid container spacing={3}>
-        <Grid size={{ xs: 12, md: 7 }}>
-          <Card elevation={8} sx={{ height: '100%' }}>
-            <CardContent sx={{ p: { xs: 3, md: 4 } }}>
-              <Stack spacing={2}>
-                <Typography variant="overline" color="primary" fontWeight={700} letterSpacing={1}>
-                  O właścicielce
-                </Typography>
-                <Typography variant="h4" component="h2">
-                  Aleksandra Skąpska
-                </Typography>
-                <Typography color="text.secondary">
-                  Trenerka z doświadczeniem w pracy z końmi sportowymi i rekreacyjnymi. Wychowana
-                  wśród koni, łączy rzetelną opiekę z indywidualnym podejściem do każdego jeźdźca.
-                  Wierzy, że spokój, cierpliwość i konsekwencja budują zaufanie między koniem a
-                  człowiekiem.
-                </Typography>
-              </Stack>
-            </CardContent>
-          </Card>
-        </Grid>
-
-
-
-        <Grid size={{ xs: 12, md: 7 }}>
-
-          <Card sx={{ border: '1px solid rgba(15, 23, 42, 0.06)' }}>
-            <CardContent sx={{ p: { xs: 3, md: 4 } }}>
-              <Stack spacing={2}>
-                <Typography variant="overline" color="primary" fontWeight={700} letterSpacing={1}>
-                  Stajnia i okolica
-                </Typography>
-                <Typography variant="h4" component="h2">
-                  Przestrzeń do pracy, odpoczynku i terenów
-                </Typography>
+        <Grid container spacing={3} size={{ xs: 12, md: 7 }}>
+          <Grid >
+            <Card elevation={8} sx={{ height: '100%' }}>
+              <CardContent sx={{ p: { xs: 3, md: 4 } }}>
                 <Stack spacing={2}>
-                  <Typography color="text.secondary">
-                    Do dyspozycji mamy jasną halę do pracy w każdą pogodę, piaszczysty plac oraz
-                    bezpieczne padoki z dostępem do wody i siana. Dbamy o regularny ruch, karmienie i
-                    komfort koni przez cały rok.
+                  <Typography variant="overline" color="primary" fontWeight={700} letterSpacing={1}>
+                    O właścicielce
+                  </Typography>
+                  <Typography variant="h4" component="h2">
+                    Aleksandra Skąpska
                   </Typography>
                   <Typography color="text.secondary">
-                    Stajnia położona jest w Grębaninie (gmina Baranów), wśród łąk i lasów sprzyjających
-                    wyjazdom w teren. Szybki dojazd z Kępna, Wieruszowa i Ostrowa Wielkopolskiego
-                    ułatwia regularne wizyty właścicieli.
+                    Trenerka z doświadczeniem w pracy z końmi sportowymi i rekreacyjnymi. Wychowana
+                    wśród koni, łączy rzetelną opiekę z indywidualnym podejściem do każdego jeźdźca.
+                    Wierzy, że spokój, cierpliwość i konsekwencja budują zaufanie między koniem a
+                    człowiekiem.
                   </Typography>
-                  <Divider />
-                  <Stack spacing={1}>
-                    <Stack direction="row" spacing={1} alignItems="center">
-                      <LocationOnIcon color="primary" />
-                      <Typography fontWeight={600}>Grębanin, okolice Kępna</Typography>
-                    </Stack>
-                    <Typography variant="body2" color="text.secondary">
-                      Kameralna stajnia otoczona łąkami i lasami – idealna baza do spokojnej pracy i
-                      terenów.
+                </Stack>
+              </CardContent>
+            </Card>
+          </Grid>
+          <Grid>
+            <Card sx={{ border: '1px solid rgba(15, 23, 42, 0.06)' }}>
+              <CardContent sx={{ p: { xs: 3, md: 4 } }}>
+                <Stack spacing={2}>
+                  <Typography variant="overline" color="primary" fontWeight={700} letterSpacing={1}>
+                    Stajnia i okolica
+                  </Typography>
+                  <Typography variant="h4" component="h2">
+                    Przestrzeń do pracy, odpoczynku i terenów
+                  </Typography>
+                  <Stack spacing={2}>
+                    <Typography color="text.secondary">
+                      Do dyspozycji mamy jasną halę do pracy w każdą pogodę, piaszczysty plac oraz
+                      bezpieczne padoki z dostępem do wody i siana. Dbamy o regularny ruch, karmienie i
+                      komfort koni przez cały rok.
                     </Typography>
+                    <Typography color="text.secondary">
+                      Stajnia położona jest w Grębaninie (gmina Baranów), wśród łąk i lasów sprzyjających
+                      wyjazdom w teren. Szybki dojazd z Kępna, Wieruszowa i Ostrowa Wielkopolskiego
+                      ułatwia regularne wizyty właścicieli.
+                    </Typography>
+                    <Divider />
+                    <Stack spacing={1}>
+                      <Stack direction="row" spacing={1} alignItems="center">
+                        <LocationOnIcon color="primary" />
+                        <Typography fontWeight={600}>Grębanin, okolice Kępna</Typography>
+                      </Stack>
+                      <Typography variant="body2" color="text.secondary">
+                        Kameralna stajnia otoczona łąkami i lasami – idealna baza do spokojnej pracy i
+                        terenów.
+                      </Typography>
+                    </Stack>
                   </Stack>
                 </Stack>
-              </Stack>
-            </CardContent>
-          </Card>
+              </CardContent>
+            </Card>
+          </Grid>
         </Grid>
+
+
+
 
         <Grid size={{ xs: 12, md: 5 }}>
           <Card
@@ -129,7 +130,7 @@ export default function Info() {
                       <Typography variant="body2" color="text.secondary">
                         Adres
                       </Typography>
-                      <Typography fontWeight={700}>Grębanin 19g, <br/> 63-604, woj. wielkopolskie</Typography>
+                      <Typography fontWeight={700}>Grębanin 19g, <br /> 63-604, woj. wielkopolskie</Typography>
                     </Stack>
                   </Stack>
 
@@ -147,15 +148,18 @@ export default function Info() {
                   <Button variant="contained" href="tel:+4535230220" startIcon={<CallIcon />}>
                     Umów wizytę
                   </Button>
-                  <IconButton
-                    color="primary"
-                    aria-label="Facebook"
-                    href="https://www.facebook.com"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <FacebookIcon />
-                  </IconButton>
+                  <Stack direction="row" spacing={1}>
+                    <IconButton
+                      color="primary"
+                      aria-label="Facebook"
+                      href="https://www.facebook.com"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <FacebookIcon />
+                    </IconButton>
+                  </Stack>
+
                 </Stack>
               </Stack>
             </CardContent>
